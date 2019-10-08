@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3BF5EDB6-6426-4382-9F1A-15193EDA1C54}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>JCompiler</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AccessProperty.h" />
+    <ClInclude Include="ArrayType.h" />
+    <ClInclude Include="ASTfiles.h" />
+    <ClInclude Include="ASTgraphics.h" />
+    <ClInclude Include="CastExpression.h" />
+    <ClInclude Include="ClassContext.h" />
+    <ClInclude Include="ClassNameDefn.h" />
+    <ClInclude Include="CompilationContext.h" />
+    <ClInclude Include="Context.h" />
+    <ClInclude Include="ConversionTable.h" />
+    <ClInclude Include="Defn.h" />
+    <ClInclude Include="ErrorRecovery.h" />
+    <ClInclude Include="FollowSets.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="IncrementExpression.h" />
+    <ClInclude Include="JArithmaticBinaryExpression.h" />
+    <ClInclude Include="JClass.h" />
+    <ClInclude Include="JForeachStatement.h" />
+    <ClInclude Include="JPackageSelector.h" />
+    <ClInclude Include="JThisConstruction.h" />
+    <ClInclude Include="InterfaceContext.h" />
+    <ClInclude Include="InterfaceNameDefn.h" />
+    <ClInclude Include="JProject.h" />
+    <ClInclude Include="JArrayExpression.h" />
+    <ClInclude Include="JArrayInit.h" />
+    <ClInclude Include="JAssignment.h" />
+    <ClInclude Include="JAssignOp.h" />
+    <ClInclude Include="JAST.h" />
+    <ClInclude Include="JBinaryExpression.h" />
+    <ClInclude Include="JBlock.h" />
+    <ClInclude Include="JBoolBinaryExpression.h" />
+    <ClInclude Include="JCatch.h" />
+    <ClInclude Include="JClassDeclaration.h" />
+    <ClInclude Include="JComparison.h" />
+    <ClInclude Include="JCompilationUnit.h" />
+    <ClInclude Include="JConditionalExpression.h" />
+    <ClInclude Include="JConstructorDeclaration.h" />
+    <ClInclude Include="JDivAssignOp.h" />
+    <ClInclude Include="JDivOp.h" />
+    <ClInclude Include="JEmptyStatement.h" />
+    <ClInclude Include="JEqualOp.h" />
+    <ClInclude Include="JExpression.h" />
+    <ClInclude Include="JExpressionStatement.h" />
+    <ClInclude Include="JFieldDeclaration.h" />
+    <ClInclude Include="JFieldSelection.h" />
+    <ClInclude Include="JFormalParameter.h" />
+    <ClInclude Include="JForStatement.h" />
+    <ClInclude Include="JGreaterOrEqualOp.h" />
+    <ClInclude Include="JGreaterThanOp.h" />
+    <ClInclude Include="JGuardingStatement.h" />
+    <ClInclude Include="JIfStatement.h" />
+    <ClInclude Include="JInterfaceDeclaration.h" />
+    <ClInclude Include="JIterationStatement.h" />
+    <ClInclude Include="JJumpStatement.h" />
+    <ClInclude Include="JLabelStatement.h" />
+    <ClInclude Include="JLessOrEqualOp.h" />
+    <ClInclude Include="JLessThanOp.h" />
+    <ClInclude Include="JLiteral.h" />
+    <ClInclude Include="JLiteralChar.h" />
+    <ClInclude Include="JLiteralDouble.h" />
+    <ClInclude Include="JLiteralFalse.h" />
+    <ClInclude Include="JLiteralFloat.h" />
+    <ClInclude Include="JLiteralInt.h" />
+    <ClInclude Include="JLiteralLong.h" />
+    <ClInclude Include="JLiteralNull.h" />
+    <ClInclude Include="JLiteralString.h" />
+    <ClInclude Include="JLiteralTrue.h" />
+    <ClInclude Include="JLogicalAndOp.h" />
+    <ClInclude Include="JLogicalNotOp.h" />
+    <ClInclude Include="JLogicalOrOp.h" />
+    <ClInclude Include="ExpressionStatementInterface.h" />
+    <ClInclude Include="JMethodDeclaration.h" />
+    <ClInclude Include="JMethodSelection.h" />
+    <ClInclude Include="JModOp.h" />
+    <ClInclude Include="JMulAssignOp.h" />
+    <ClInclude Include="JMulOp.h" />
+    <ClInclude Include="JNegateOp.h" />
+    <ClInclude Include="JNewArrayOp.h" />
+    <ClInclude Include="JNewOp.h" />
+    <ClInclude Include="JNotEqualOp.h" />
+    <ClInclude Include="JPackage.h" />
+    <ClInclude Include="JPlusAssignOp.h" />
+    <ClInclude Include="JPlusOP.h" />
+    <ClInclude Include="JPositiveOp.h" />
+    <ClInclude Include="JPostDecrementOp.h" />
+    <ClInclude Include="JPostIncrementOp.h" />
+    <ClInclude Include="JPreDecrementOp.h" />
+    <ClInclude Include="JPreIncrementOp.h" />
+    <ClInclude Include="JSelectionStatement.h" />
+    <ClInclude Include="JStatement.h" />
+    <ClInclude Include="JSubAssignOp.h" />
+    <ClInclude Include="JSubOp.h" />
+    <ClInclude Include="JSuper.h" />
+    <ClInclude Include="JSuperConstruction.h" />
+    <ClInclude Include="JSwitchStatement.h" />
+    <ClInclude Include="JThis.h" />
+    <ClInclude Include="ConstantExpressionInterface.h" />
+    <ClInclude Include="JUnaryExpression.h" />
+    <ClInclude Include="JVariable.h" />
+    <ClInclude Include="JVariableDeclaration.h" />
+    <ClInclude Include="JVariableDeclarator.h" />
+    <ClInclude Include="JWhileStatement.h" />
+    <ClInclude Include="LHSExpressionInterface.h" />
+    <ClInclude Include="LocalContext.h" />
+    <ClInclude Include="MethodContext.h" />
+    <ClInclude Include="MethodNameDefn.h" />
+    <ClInclude Include="packageContext.h" />
+    <ClInclude Include="PackageNameDefn.h" />
+    <ClInclude Include="PrimitiveType.h" />
+    <ClInclude Include="Printer.h" />
+    <ClInclude Include="ProjectContext.h" />
+    <ClInclude Include="ReferenceType.h" />
+    <ClInclude Include="Scanner.h" />
+    <ClInclude Include="JInitializerDeclaration.h" />
+    <ClInclude Include="SymbolTableFiles.h" />
+    <ClInclude Include="Type.h" />
+    <ClInclude Include="typeName.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="VariableNameDefn.h" />
+    <ClInclude Include="WorkingWithFiles.h" />
+    <ClInclude Include="yacc.hpp" />
+    <ClInclude Include="yaccActions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccessProperty.cpp" />
+    <ClCompile Include="ArrayType.cpp" />
+    <ClCompile Include="ASTgraphics.cpp" />
+    <ClCompile Include="CastExpression.cpp" />
+    <ClCompile Include="ClassContext.cpp" />
+    <ClCompile Include="ClassNameDefn.cpp" />
+    <ClCompile Include="CompilationContext.cpp" />
+    <ClCompile Include="Context.cpp" />
+    <ClCompile Include="ConversionTable.cpp" />
+    <ClCompile Include="Defn.cpp" />
+    <ClCompile Include="ErrorRecovery.cpp" />
+    <ClCompile Include="globlal.cpp" />
+    <ClCompile Include="IncrementExpression.cpp" />
+    <ClCompile Include="InterfaceContext.cpp" />
+    <ClCompile Include="InterfaceNameDefn.cpp" />
+    <ClCompile Include="JArithmaticBinaryExpression.cpp" />
+    <ClCompile Include="JArrayExpression.cpp" />
+    <ClCompile Include="JAssignment.cpp" />
+    <ClCompile Include="JAssignOp.cpp" />
+    <ClCompile Include="JAST.cpp" />
+    <ClCompile Include="JBinaryExpression.cpp" />
+    <ClCompile Include="JBlock.cpp" />
+    <ClCompile Include="JBoolBinaryExpression.cpp" />
+    <ClCompile Include="JCatch.cpp" />
+    <ClCompile Include="JClass.cpp" />
+    <ClCompile Include="JClassDeclaration.cpp" />
+    <ClCompile Include="JComparison.cpp" />
+    <ClCompile Include="JCompilationUnit.cpp" />
+    <ClCompile Include="JConditionalExpression.cpp" />
+    <ClCompile Include="JConstructorDeclaration.cpp" />
+    <ClCompile Include="JDivAssignOp.cpp" />
+    <ClCompile Include="JDivOp.cpp" />
+    <ClCompile Include="JEmptyStatement.cpp" />
+    <ClCompile Include="JEqualOp.cpp" />
+    <ClCompile Include="JExpression.cpp" />
+    <ClCompile Include="JExpressionStatement.cpp" />
+    <ClCompile Include="JFieldDeclaration.cpp" />
+    <ClCompile Include="JFieldSelection.cpp" />
+    <ClCompile Include="JForeachStatement.cpp" />
+    <ClCompile Include="JFormalParameter.cpp" />
+    <ClCompile Include="JForStatement.cpp" />
+    <ClCompile Include="JGreaterOrEqualOp.cpp" />
+    <ClCompile Include="JGreaterThanOp.cpp" />
+    <ClCompile Include="JGuardingStatement.cpp" />
+    <ClCompile Include="JIfStatement.cpp" />
+    <ClCompile Include="JInitializerDeclaration.cpp" />
+    <ClCompile Include="JInterfaceDeclaration.cpp" />
+    <ClCompile Include="JIterationStatement.cpp" />
+    <ClCompile Include="JJumpStatement.cpp" />
+    <ClCompile Include="JLabelStatement.cpp" />
+    <ClCompile Include="JLessOrEqualOp.cpp" />
+    <ClCompile Include="JLessThanOp.cpp" />
+    <ClCompile Include="JLiteral.cpp" />
+    <ClCompile Include="JLiteralChar.cpp" />
+    <ClCompile Include="JLiteralDouble.cpp" />
+    <ClCompile Include="JLiteralFalse.cpp" />
+    <ClCompile Include="JLiteralFloat.cpp" />
+    <ClCompile Include="JLiteralInt.cpp" />
+    <ClCompile Include="JLiteralLong.cpp" />
+    <ClCompile Include="JLiteralNull.cpp" />
+    <ClCompile Include="JLiteralString.cpp" />
+    <ClCompile Include="JLogicalAndOp.cpp" />
+    <ClCompile Include="JLogicalNotOp.cpp" />
+    <ClCompile Include="JLogicalOrOp.cpp" />
+    <ClCompile Include="JMethodDeclaration.cpp" />
+    <ClCompile Include="JModOp.cpp" />
+    <ClCompile Include="JMulAssignOp.cpp" />
+    <ClCompile Include="JMulOp.cpp" />
+    <ClCompile Include="JNegateOp.cpp" />
+    <ClCompile Include="JNewOp.cpp" />
+    <ClCompile Include="JNotEqualOp.cpp" />
+    <ClCompile Include="JPackage.cpp" />
+    <ClCompile Include="JPackageSelector.cpp" />
+    <ClCompile Include="JPlusAssignOp.cpp" />
+    <ClCompile Include="JPlusOP.cpp" />
+    <ClCompile Include="JPositiveOp.cpp" />
+    <ClCompile Include="JPostDecrementOp.cpp" />
+    <ClCompile Include="JPostIncrementOp.cpp" />
+    <ClCompile Include="JPreDecrementOp.cpp" />
+    <ClCompile Include="JPreIncrementOp.cpp" />
+    <ClCompile Include="JProject.cpp" />
+    <ClCompile Include="JSelectionStatement.cpp" />
+    <ClCompile Include="JStatement.cpp" />
+    <ClCompile Include="JSubAssignOp.cpp" />
+    <ClCompile Include="JSubOp.cpp" />
+    <ClCompile Include="JSuper.cpp" />
+    <ClCompile Include="JSuperConstruction.cpp" />
+    <ClCompile Include="JSwitchStatement.cpp" />
+    <ClCompile Include="JThis.cpp" />
+    <ClCompile Include="JUnaryExpression.cpp" />
+    <ClCompile Include="JVariable.cpp" />
+    <ClCompile Include="JVariableDeclaration.cpp" />
+    <ClCompile Include="JVariableDeclarator.cpp" />
+    <ClCompile Include="JWhileStatement.cpp" />
+    <ClCompile Include="lex.yy.cc" />
+    <ClCompile Include="LocalContext.cpp" />
+    <ClCompile Include="MethodContext.cpp" />
+    <ClCompile Include="MethodNameDefn.cpp" />
+    <ClCompile Include="MethodSelection.cpp" />
+    <ClCompile Include="packageContext.cpp" />
+    <ClCompile Include="PackageNameDefn.cpp" />
+    <ClCompile Include="PrimitiveType.cpp" />
+    <ClCompile Include="Printer.cpp" />
+    <ClCompile Include="ProjectContext.cpp" />
+    <ClCompile Include="ReferenceType.cpp" />
+    <ClCompile Include="JLiteralTrue.cpp" />
+    <ClCompile Include="JThisConstruction.cpp" />
+    <ClCompile Include="Type.cpp" />
+    <ClCompile Include="typeName.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="VariableNameDefn.cpp" />
+    <ClCompile Include="WorkingWithFiles.cpp" />
+    <ClCompile Include="yacc.cpp" />
+    <ClCompile Include="yaccActions9 UnaryExpressions.cpp" />
+    <ClCompile Include="yaccActions8 Literals.cpp" />
+    <ClCompile Include="yaccActions1 JComp-QualifiedName.cpp" />
+    <ClCompile Include="yaccActions2 TypeDeclaration-ClassHeader.cpp" />
+    <ClCompile Include="yaccActions3 Modifiers-DeclaratorName.cpp" />
+    <ClCompile Include="yaccActions4 JMethodDec-WrongBlock.cpp" />
+    <ClCompile Include="yaccActions5 JVariableAndStatements.cpp" />
+    <ClCompile Include="yaccActions6 Statement-Selectionstatement.cpp" />
+    <ClCompile Include="yaccActions7 Iteration-guarding.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assembly.asm" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="scanning.l" />
+    <None Include="yacc.output" />
+    <None Include="yacc_final.y" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Packages\ali.second\ali.three\Coding3.txt" />
+    <Text Include="..\..\..\JavaWorkSpace\FirstJavaProject\ali.first\Coding.txt" />
+    <Text Include="..\..\..\JavaWorkSpace\FirstJavaProject\ali.first\Coding2.txt" />
+    <Text Include="..\..\..\JavaWorkSpace\FirstJavaProject\ali.second\ali.three\Coding3.txt" />
+    <Text Include="grammarListening.txt" />
+    <Text Include="tokenListening.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

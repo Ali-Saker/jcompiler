@@ -1,0 +1,1196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Global">
+      <UniqueIdentifier>{f466cae3-9982-4246-932f-4cccc70f6bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST">
+      <UniqueIdentifier>{16b0a6ca-14d4-4237-b0e6-d719f45f33fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JCompilationUnit">
+      <UniqueIdentifier>{ffb86a42-97c4-4457-ab2d-adad67b56a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JMethodDeclaration">
+      <UniqueIdentifier>{fbf8bc6b-a76c-4733-bde8-7647bcb56438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JVariableDeclarator">
+      <UniqueIdentifier>{e6b67b3f-46e5-4ef7-83ba-7d4dc2edf72a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JBlock">
+      <UniqueIdentifier>{b1e4d29a-9431-409e-8415-95386e394257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatement">
+      <UniqueIdentifier>{f97936a9-ce4f-4a8e-9095-2d71ecafce81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JVariableDeclaration">
+      <UniqueIdentifier>{4ec9abe5-42e0-4509-90df-8e70aa296a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpression">
+      <UniqueIdentifier>{0e6a3c11-a96c-4197-a3a7-abd5cc0629fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\ASTGraphics">
+      <UniqueIdentifier>{cb172fa1-09a1-4595-aeee-fa5477836d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{0081366e-ff76-48d1-8643-f1d78dcba736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JInterfaceDeclaration">
+      <UniqueIdentifier>{b54f0b28-9af8-4931-9931-8498bbf3c79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JConstructorDeclaration">
+      <UniqueIdentifier>{fece58e5-19c4-4617-87b9-76c072a29389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JInitializerDeclaration">
+      <UniqueIdentifier>{e5f2c96f-bbbd-48a9-ba05-34b1ca0d0b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\ASTFiles">
+      <UniqueIdentifier>{992f3b0e-f360-4aa8-9f5e-30ed9a73f4b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JFormalParameter">
+      <UniqueIdentifier>{640a4cef-e080-4c1f-9422-b84b534ddae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JClassDeclaration">
+      <UniqueIdentifier>{87b162c0-ab84-4c84-bd71-eb3ad08c53ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ErrorRecovery">
+      <UniqueIdentifier>{c3def087-d341-4fdf-bdc0-1cfb81d5adef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JAST">
+      <UniqueIdentifier>{18303087-4c4a-4cac-a286-b8fadccf3b08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JPackage">
+      <UniqueIdentifier>{82144c3c-6bab-4e7e-a2e9-43cf4bc16531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Working with files">
+      <UniqueIdentifier>{25d02f93-01cf-45df-a271-73a20db19dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes">
+      <UniqueIdentifier>{956e497c-d844-48fb-b4fd-ce09be6ae22a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JEmptyStatement">
+      <UniqueIdentifier>{e0e41fe7-1146-4386-a7d2-b867bd4a0652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JExpressionStatement">
+      <UniqueIdentifier>{f1ade5d6-ba12-4715-a65a-58e85b3b710a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JForStatement">
+      <UniqueIdentifier>{2f2e95e5-a4bf-4231-b112-24ac9efe2d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JGuardingStatement">
+      <UniqueIdentifier>{1426bb83-ca10-481e-bfa7-9020654aeb9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JIfStatement">
+      <UniqueIdentifier>{1ca5ed41-1630-48f0-9b08-4073f277b485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JSelectionStatement">
+      <UniqueIdentifier>{2fdf5761-0f13-4baa-9a73-de659f3c92e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JSwitchStatement">
+      <UniqueIdentifier>{068f4b96-f0bd-4c1a-a26e-546c0d20cda7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JIterationStatement">
+      <UniqueIdentifier>{d0c2b054-5f35-444b-bef1-3392f4635406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JLabelStatement">
+      <UniqueIdentifier>{28ec7b01-707f-404a-9174-7dcbfd35ee77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JWhileStatement">
+      <UniqueIdentifier>{fa0b4404-2d36-424a-97f8-3dd9ae5c8cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JCatch">
+      <UniqueIdentifier>{d4bfc994-ca43-47fb-950d-b72fa2bf1d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConversionTable">
+      <UniqueIdentifier>{d5213f06-bb01-4b27-b556-b65e37ec8fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\AccessProperty">
+      <UniqueIdentifier>{96c8dea5-808d-4467-bcd7-b89c7e428cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable">
+      <UniqueIdentifier>{41585b61-a795-4b4c-9b40-c8c09563df79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Definetions">
+      <UniqueIdentifier>{8d1fe5c7-4535-4d96-8ece-75544772318a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts">
+      <UniqueIdentifier>{06c857d6-9197-44ec-b416-db3d7b2dd301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts\InterfaceContext">
+      <UniqueIdentifier>{0d870989-d63a-4828-bb21-d84aba055d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts\MethodContext">
+      <UniqueIdentifier>{c5932225-2502-4842-b931-b665da624083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts\LocalContext">
+      <UniqueIdentifier>{90885cee-c614-40b6-9766-cece7775ff16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts\CompilationContext">
+      <UniqueIdentifier>{2a58af31-896e-4264-8395-304b4872699a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts\ClassContext">
+      <UniqueIdentifier>{eb869082-71a3-48a2-8ec7-3791a1175810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts\Context">
+      <UniqueIdentifier>{6f5bb9a8-c0c1-428c-b116-8cdc41c2627b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts\ProjectContext">
+      <UniqueIdentifier>{a531bfae-31d5-4e7c-bd66-1e4159aa65b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Contexts\packageContext">
+      <UniqueIdentifier>{3f5b2573-81c0-4fda-8184-46d4528fb606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Definetions\Defn">
+      <UniqueIdentifier>{322390d8-c3a9-4c32-a2cc-b403f330b1aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Definetions\MethodNameDefn">
+      <UniqueIdentifier>{edb7c446-10e7-48af-b727-035d916c38e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Definetions\InterfaceNameDefn">
+      <UniqueIdentifier>{1de0681d-285c-4adf-92b9-66d0b230bfc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Definetions\ClassNameDefn">
+      <UniqueIdentifier>{583e2428-e461-4206-906f-744152fcf6bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Definetions\VariableNameDefn">
+      <UniqueIdentifier>{47391932-1b9b-4e01-b7ec-b66ce374a375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes">
+      <UniqueIdentifier>{0cf44753-34a7-4a9a-9b5c-2a3a5b50b0d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals">
+      <UniqueIdentifier>{001911fc-f6fc-4c76-83dd-85f059b5bb37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JConditionalExpression">
+      <UniqueIdentifier>{e5d04f8b-33e4-4f2d-9d0d-9035413ebcbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteral">
+      <UniqueIdentifier>{1d4d63bc-531c-4b4f-83f2-7798828b4366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralChar">
+      <UniqueIdentifier>{2aa24d32-a003-4166-bd17-1887a67b9994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralDouble">
+      <UniqueIdentifier>{1f543a38-0d25-4741-bff9-0ea5e3f8bbc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralFalse">
+      <UniqueIdentifier>{7a98e09f-96af-48ba-ba56-7722a7ff6ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralFloat">
+      <UniqueIdentifier>{47c5a310-423b-4094-9a64-b63b9b49dd96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralInt">
+      <UniqueIdentifier>{118a04c5-cbda-40d6-8141-2825355b704c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralLong">
+      <UniqueIdentifier>{afa7bf99-9f08-467e-95b5-c9e0d71d9b96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralNull">
+      <UniqueIdentifier>{13c2b635-77d6-446d-a02c-d0d91a1d06a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralString">
+      <UniqueIdentifier>{5d0b529d-eaf6-40b3-9db7-6f0cdbc05c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JLiterals\JLiteralTrue">
+      <UniqueIdentifier>{108d3493-45a1-4d7a-abc6-099cae4608f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions">
+      <UniqueIdentifier>{cb84fc9c-067b-44ba-8801-c6631dae8f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions">
+      <UniqueIdentifier>{553b05ae-28ec-43ba-89a4-952641f38375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JBoolBinaryExrepssion">
+      <UniqueIdentifier>{cb58083b-4101-4ece-8954-f44211e207b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JEqualOp">
+      <UniqueIdentifier>{f41de970-4619-4290-9792-cf6f66775d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JLogicalAndOp">
+      <UniqueIdentifier>{7199b180-b6ac-4c05-9d1f-d1780ba556a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JLogicalOrOp">
+      <UniqueIdentifier>{9246325f-6299-452b-807b-60c04c32ff8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JNotEqualOp">
+      <UniqueIdentifier>{8c3f9812-13f1-4302-bee6-1acfbb2524ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBinaryExpression">
+      <UniqueIdentifier>{0d97279e-4aae-4a9d-a5e7-162109eaa5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions">
+      <UniqueIdentifier>{2ee00b2e-f108-472b-8aba-d53c3522796b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JSubOp">
+      <UniqueIdentifier>{c09de3b7-a433-4885-a098-a28bdec8dcb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JPlusOP">
+      <UniqueIdentifier>{6946085f-5747-4240-814b-09253be5e91a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JMulOp">
+      <UniqueIdentifier>{e8e595d4-ece5-4cf1-ba7f-f8876be076d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JModOp">
+      <UniqueIdentifier>{5749e49d-c924-49b8-86de-a9e686a25a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JDivOp">
+      <UniqueIdentifier>{0a7c0bfa-982c-476f-81bc-2bdfecc59c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions">
+      <UniqueIdentifier>{f3fb1f3f-4204-4543-9203-cf03e7f31f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JAssignment">
+      <UniqueIdentifier>{1ca8566d-6063-4304-ba5f-2743834d9c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JAssignOp">
+      <UniqueIdentifier>{9e924ea7-d985-4bae-b64c-fa5d547d8459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JDivAssignOp">
+      <UniqueIdentifier>{fa45a1fc-1874-42ef-859f-e8bc2553b1e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JMulAssignOp">
+      <UniqueIdentifier>{71e396ca-bb25-4c85-a288-800fdeec058a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JPlusAssignOp">
+      <UniqueIdentifier>{995ab73e-62b0-4a33-8665-51961d62bdc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JSubAssignOp">
+      <UniqueIdentifier>{74cf9f4f-6812-4d56-893e-170359eb82e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JThis">
+      <UniqueIdentifier>{29f3c6c2-ce49-4452-ac2e-202ad12acc69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions">
+      <UniqueIdentifier>{ae2f660c-ab97-4241-858e-2aaeac20fd45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JComparison">
+      <UniqueIdentifier>{e276fdfc-9620-4c89-b1d3-783a021673e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JGreaterOrEqualOp">
+      <UniqueIdentifier>{5c686aee-c1ce-47fd-a524-de19be971bfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JGreaterThanOp">
+      <UniqueIdentifier>{056ab72c-5bae-42f7-bd6f-5f2673600544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JLessOrEqualOp">
+      <UniqueIdentifier>{0c800942-d2e7-4b15-a0e2-0bc8651f6a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JLessThanOp">
+      <UniqueIdentifier>{d4b5747c-eb0f-4ad6-8293-ae3fe95dad97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JSuper">
+      <UniqueIdentifier>{dc671367-fb23-4029-a28d-89a8b9fd3792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JNewOp">
+      <UniqueIdentifier>{18e0cad7-364a-4d7d-97e8-dd09e0e07899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions">
+      <UniqueIdentifier>{fd1fa0c8-bc56-4397-86c2-e51ea61a61e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\JLogicalNotOp">
+      <UniqueIdentifier>{289f2090-ecee-4712-85ac-9d86278a054b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\JPostDecrementOp">
+      <UniqueIdentifier>{f4e87b9b-5540-4656-bb08-0a9249a1531c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\JPostIncrementOp">
+      <UniqueIdentifier>{4234a23d-640f-4e4c-b759-307485bd86a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\JPreDecrementOp">
+      <UniqueIdentifier>{61304ba4-2777-4168-9236-70cc60181a01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\JPreIncrementOp">
+      <UniqueIdentifier>{88f0e78b-38eb-4929-800f-ebf1b198900c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\JPositiveOp">
+      <UniqueIdentifier>{bf84bf2b-6d5e-4f29-b024-65828da292dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\JUnaryExpression">
+      <UniqueIdentifier>{833c2351-bf0b-4d67-95d5-2a379a1e05d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JFieldDeclaration">
+      <UniqueIdentifier>{857c8918-b0ff-43e9-9af0-e4d1315ee4ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\Selector">
+      <UniqueIdentifier>{2c841d8f-152e-48e9-8abe-577ccef4d074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SymbolTable\Definetions\PackageNameDefn">
+      <UniqueIdentifier>{eabfbec9-95e8-4971-b39d-2832c2f28894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\LHSExpressionInterface">
+      <UniqueIdentifier>{d4acad22-d451-4200-982c-d00af2cf86c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JArithmaticBinaryExpression">
+      <UniqueIdentifier>{90338526-aaaf-4f97-b9df-865610c19784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\JNegateOp">
+      <UniqueIdentifier>{2938db12-460c-463b-9689-fc74dee8dd2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\UnaryExpressions\IncrementExpression">
+      <UniqueIdentifier>{47dc87b3-a6cd-4788-8f1f-a94ccc01a618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\Selector\JVariable">
+      <UniqueIdentifier>{4419525c-f664-41bc-a855-3e3ccc4df718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\Selector\JFieldSelection">
+      <UniqueIdentifier>{e6c0a528-23a6-42f9-aa96-7ac4bd1beb5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\Selector\JClass">
+      <UniqueIdentifier>{898e7c28-9d8a-4b21-9c1c-2e827e9614db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types">
+      <UniqueIdentifier>{51318812-eba5-4d2e-af21-ed3d8af366aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\Type">
+      <UniqueIdentifier>{74cc6e6d-6d3a-4e3f-909a-9385347560f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\ArrayType">
+      <UniqueIdentifier>{4acfe4e7-c9ab-4452-b829-ecf31c86c238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\ReferenceType">
+      <UniqueIdentifier>{0b89e0f1-cb16-4bc0-9a57-565eb216a637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\TypeName">
+      <UniqueIdentifier>{b4b1e0af-583e-4795-9b8d-2c6b65c8555a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\PrimitiveType">
+      <UniqueIdentifier>{fce1737d-cf39-4c9b-a13d-088c543b9b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JForeachStatement">
+      <UniqueIdentifier>{db857560-5c61-4b1a-a81f-578c7423b70a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JProject">
+      <UniqueIdentifier>{c89afd59-48e0-4c38-90f6-48d76f766a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\Selector\JPackageSelector">
+      <UniqueIdentifier>{ceb996f3-d5e3-44ee-b670-86c2439c8a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scanner">
+      <UniqueIdentifier>{b0397a4f-ff22-4e81-a5fc-b900e214c3e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JArray">
+      <UniqueIdentifier>{f7ee3139-c77a-40b5-86d9-865c9a7c2cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JArray\JArrayExpression">
+      <UniqueIdentifier>{d8864db3-c625-4d2e-982e-1089dc5203a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JArray\JArrayInit">
+      <UniqueIdentifier>{b9a9fccf-da80-42bd-8bf5-ecf3b3ccf817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JArray\JNewArrayOp">
+      <UniqueIdentifier>{82c6b38c-d501-44c1-8524-b5340a33e3f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JStatementsTypes\JJumpStatement">
+      <UniqueIdentifier>{2e1ff9f8-d4ae-4ce9-b2ba-b6dcb61a2687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\Selector\MethodSelection">
+      <UniqueIdentifier>{9ff28138-29a2-41e1-9644-7741c7a6dbe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JConstructorExpressions">
+      <UniqueIdentifier>{2171614f-867d-4c25-9c1a-af4512e1503e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JConstructorExpressions\JSuperConstruction">
+      <UniqueIdentifier>{ac9b3dfc-e484-4177-a7bd-ec45843d3bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\JConstructorExpressions\JThisConstruction">
+      <UniqueIdentifier>{050b9e2c-89ca-479f-ae41-4b151b5e2707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\BinaryExpressions\ExpressionStatementInterface">
+      <UniqueIdentifier>{480886f3-b06b-4244-b369-9186d07571fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\CastExpression">
+      <UniqueIdentifier>{d63579c3-36ba-43f3-b443-2ffafc7538a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\JExpressionsTypes\CastExpression\ConstantExpressionInterface">
+      <UniqueIdentifier>{a10273fb-6fd6-4c3d-be49-a64a880645dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AST\Printer">
+      <UniqueIdentifier>{ea45235e-ad11-4824-99dd-2cef968da5cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parser">
+      <UniqueIdentifier>{a8b86d9b-18ef-4ce8-ac3e-21dd91ec9c5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scanner.h">
+      <Filter>Source Files\Scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Source Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowSets.h">
+      <Filter>Source Files\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="JCompilationUnit.h">
+      <Filter>Source Files\AST\JCompilationUnit</Filter>
+    </ClInclude>
+    <ClInclude Include="JClassDeclaration.h">
+      <Filter>Source Files\AST\JClassDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="JFieldDeclaration.h">
+      <Filter>Source Files\AST\JFieldDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="JVariableDeclarator.h">
+      <Filter>Source Files\AST\JVariableDeclarator</Filter>
+    </ClInclude>
+    <ClInclude Include="JFormalParameter.h">
+      <Filter>Source Files\AST\JFormalParameter</Filter>
+    </ClInclude>
+    <ClInclude Include="JBlock.h">
+      <Filter>Source Files\AST\JBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="JStatement.h">
+      <Filter>Source Files\AST\JStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JVariableDeclaration.h">
+      <Filter>Source Files\AST\JVariableDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="JExpression.h">
+      <Filter>Source Files\AST\JExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTfiles.h">
+      <Filter>Source Files\AST\ASTFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ASTgraphics.h">
+      <Filter>Source Files\AST\ASTGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="JInterfaceDeclaration.h">
+      <Filter>Source Files\AST\JInterfaceDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="yaccActions.h">
+      <Filter>Source Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="JConstructorDeclaration.h">
+      <Filter>Source Files\AST\JConstructorDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="JInitializerDeclaration.h">
+      <Filter>Source Files\AST\JInitializerDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="JCatch.h">
+      <Filter>Source Files\AST\JStatementsTypes\JCatch</Filter>
+    </ClInclude>
+    <ClInclude Include="JEmptyStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JEmptyStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JExpressionStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JExpressionStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JForStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JForStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JGuardingStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JGuardingStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JIfStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JIfStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JSelectionStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JSelectionStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JSwitchStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JSwitchStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JIterationStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JIterationStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JJumpStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JJumpStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JLabelStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JLabelStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JWhileStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JWhileStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JConditionalExpression.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JConditionalExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="yacc.hpp">
+      <Filter>Source Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolTableFiles.h">
+      <Filter>Source Files\SymbolTable</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorRecovery.h">
+      <Filter>Source Files\ErrorRecovery</Filter>
+    </ClInclude>
+    <ClInclude Include="ConversionTable.h">
+      <Filter>Source Files\ConversionTable</Filter>
+    </ClInclude>
+    <ClInclude Include="JProject.h">
+      <Filter>Source Files\AST\JProject</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkingWithFiles.h">
+      <Filter>Source Files\Working with files</Filter>
+    </ClInclude>
+    <ClInclude Include="JPackage.h">
+      <Filter>Source Files\AST\JPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="Defn.h">
+      <Filter>Source Files\SymbolTable\Definetions\Defn</Filter>
+    </ClInclude>
+    <ClInclude Include="MethodNameDefn.h">
+      <Filter>Source Files\SymbolTable\Definetions\MethodNameDefn</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassNameDefn.h">
+      <Filter>Source Files\SymbolTable\Definetions\ClassNameDefn</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceNameDefn.h">
+      <Filter>Source Files\SymbolTable\Definetions\InterfaceNameDefn</Filter>
+    </ClInclude>
+    <ClInclude Include="VariableNameDefn.h">
+      <Filter>Source Files\SymbolTable\Definetions\VariableNameDefn</Filter>
+    </ClInclude>
+    <ClInclude Include="Type.h">
+      <Filter>Source Files\Types\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayType.h">
+      <Filter>Source Files\Types\ArrayType</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveType.h">
+      <Filter>Source Files\Types\PrimitiveType</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferenceType.h">
+      <Filter>Source Files\Types\ReferenceType</Filter>
+    </ClInclude>
+    <ClInclude Include="AccessProperty.h">
+      <Filter>Source Files\AST\AccessProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.h">
+      <Filter>Source Files\SymbolTable\Contexts\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassContext.h">
+      <Filter>Source Files\SymbolTable\Contexts\ClassContext</Filter>
+    </ClInclude>
+    <ClInclude Include="CompilationContext.h">
+      <Filter>Source Files\SymbolTable\Contexts\CompilationContext</Filter>
+    </ClInclude>
+    <ClInclude Include="packageContext.h">
+      <Filter>Source Files\SymbolTable\Contexts\packageContext</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectContext.h">
+      <Filter>Source Files\SymbolTable\Contexts\ProjectContext</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalContext.h">
+      <Filter>Source Files\SymbolTable\Contexts\LocalContext</Filter>
+    </ClInclude>
+    <ClInclude Include="MethodContext.h">
+      <Filter>Source Files\SymbolTable\Contexts\MethodContext</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceContext.h">
+      <Filter>Source Files\SymbolTable\Contexts\InterfaceContext</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionStatementInterface.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\ExpressionStatementInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantExpressionInterface.h">
+      <Filter>Source Files\AST\JExpressionsTypes\CastExpression\ConstantExpressionInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteral.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteral</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralChar.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralChar</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralDouble.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralDouble</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralFalse.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralFalse</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralFloat.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralFloat</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralInt.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralInt</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralLong.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralLong</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralNull.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralNull</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralString.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralString</Filter>
+    </ClInclude>
+    <ClInclude Include="JLiteralTrue.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralTrue</Filter>
+    </ClInclude>
+    <ClInclude Include="JBinaryExpression.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBinaryExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="JDivOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JDivOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JModOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JModOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JMulOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JMulOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JPlusOP.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JPlusOP</Filter>
+    </ClInclude>
+    <ClInclude Include="JSubOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JSubOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JBoolBinaryExpression.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JBoolBinaryExrepssion</Filter>
+    </ClInclude>
+    <ClInclude Include="JEqualOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JEqualOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JLogicalAndOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JLogicalAndOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JNotEqualOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JNotEqualOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JLogicalOrOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JLogicalOrOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JAssignment.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JAssignment</Filter>
+    </ClInclude>
+    <ClInclude Include="JAssignOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JAssignOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JDivAssignOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JDivAssignOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JMulAssignOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JMulAssignOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JPlusAssignOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JPlusAssignOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JSubAssignOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JSubAssignOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JComparison.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JComparison</Filter>
+    </ClInclude>
+    <ClInclude Include="JGreaterOrEqualOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JGreaterOrEqualOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JGreaterThanOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JGreaterThanOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JLessOrEqualOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JLessOrEqualOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JLessThanOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JLessThanOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JThis.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JThis</Filter>
+    </ClInclude>
+    <ClInclude Include="JSuper.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JSuper</Filter>
+    </ClInclude>
+    <ClInclude Include="JNewOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JNewOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JLogicalNotOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JLogicalNotOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JNegateOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JNegateOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JPostDecrementOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPostDecrementOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JPostIncrementOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPostIncrementOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JPreDecrementOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPreDecrementOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JPreIncrementOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPreIncrementOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JPositiveOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPositiveOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JUnaryExpression.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JUnaryExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="typeName.h">
+      <Filter>Source Files\Types\TypeName</Filter>
+    </ClInclude>
+    <ClInclude Include="JSuperConstruction.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JConstructorExpressions\JSuperConstruction</Filter>
+    </ClInclude>
+    <ClInclude Include="JThisConstruction.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JConstructorExpressions\JThisConstruction</Filter>
+    </ClInclude>
+    <ClInclude Include="PackageNameDefn.h">
+      <Filter>Source Files\SymbolTable\Definetions\PackageNameDefn</Filter>
+    </ClInclude>
+    <ClInclude Include="LHSExpressionInterface.h">
+      <Filter>Source Files\AST\JExpressionsTypes\LHSExpressionInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="JArithmaticBinaryExpression.h">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JArithmaticBinaryExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="IncrementExpression.h">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\IncrementExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="JArrayExpression.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JArray\JArrayExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="JArrayInit.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JArray\JArrayInit</Filter>
+    </ClInclude>
+    <ClInclude Include="JNewArrayOp.h">
+      <Filter>Source Files\AST\JExpressionsTypes\JArray\JNewArrayOp</Filter>
+    </ClInclude>
+    <ClInclude Include="JVariable.h">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\JVariable</Filter>
+    </ClInclude>
+    <ClInclude Include="JFieldSelection.h">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\JFieldSelection</Filter>
+    </ClInclude>
+    <ClInclude Include="JMethodSelection.h">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\MethodSelection</Filter>
+    </ClInclude>
+    <ClInclude Include="CastExpression.h">
+      <Filter>Source Files\AST\JExpressionsTypes\CastExpression</Filter>
+    </ClInclude>
+    <ClInclude Include="JClass.h">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\JClass</Filter>
+    </ClInclude>
+    <ClInclude Include="JForeachStatement.h">
+      <Filter>Source Files\AST\JStatementsTypes\JForeachStatement</Filter>
+    </ClInclude>
+    <ClInclude Include="JPackageSelector.h">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\JPackageSelector</Filter>
+    </ClInclude>
+    <ClInclude Include="JMethodDeclaration.h">
+      <Filter>Source Files\AST\JMethodDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="Printer.h">
+      <Filter>Source Files\AST\Printer</Filter>
+    </ClInclude>
+    <ClInclude Include="JAST.h">
+      <Filter>Source Files\AST\JAST</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lex.yy.cc">
+      <Filter>Source Files\Scanner</Filter>
+    </ClCompile>
+    <ClCompile Include="globlal.cpp">
+      <Filter>Source Files\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="JAST.cpp">
+      <Filter>Source Files\AST\JAST</Filter>
+    </ClCompile>
+    <ClCompile Include="JCompilationUnit.cpp">
+      <Filter>Source Files\AST\JCompilationUnit</Filter>
+    </ClCompile>
+    <ClCompile Include="JClassDeclaration.cpp">
+      <Filter>Source Files\AST\JClassDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="JFieldDeclaration.cpp">
+      <Filter>Source Files\AST\JFieldDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="JMethodDeclaration.cpp">
+      <Filter>Source Files\AST\JMethodDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="JVariableDeclarator.cpp">
+      <Filter>Source Files\AST\JVariableDeclarator</Filter>
+    </ClCompile>
+    <ClCompile Include="JFormalParameter.cpp">
+      <Filter>Source Files\AST\JFormalParameter</Filter>
+    </ClCompile>
+    <ClCompile Include="JBlock.cpp">
+      <Filter>Source Files\AST\JBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="JStatement.cpp">
+      <Filter>Source Files\AST\JStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JVariableDeclaration.cpp">
+      <Filter>Source Files\AST\JVariableDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="JExpression.cpp">
+      <Filter>Source Files\AST\JExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="ASTgraphics.cpp">
+      <Filter>Source Files\AST\ASTGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions1 JComp-QualifiedName.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions2 TypeDeclaration-ClassHeader.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions3 Modifiers-DeclaratorName.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="JInterfaceDeclaration.cpp">
+      <Filter>Source Files\AST\JInterfaceDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions4 JMethodDec-WrongBlock.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions5 JVariableAndStatements.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="JExpressionStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JExpressionStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JForStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JForStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JGuardingStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JGuardingStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JIfStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JIfStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JSelectionStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JSelectionStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JSwitchStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JSwitchStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JIterationStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JIterationStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JJumpStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JJumpStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JLabelStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JLabelStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JWhileStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JWhileStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions7 Iteration-guarding.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions6 Statement-Selectionstatement.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions8 Literals.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="yaccActions9 UnaryExpressions.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorRecovery.cpp">
+      <Filter>Source Files\ErrorRecovery</Filter>
+    </ClCompile>
+    <ClCompile Include="ConversionTable.cpp">
+      <Filter>Source Files\ConversionTable</Filter>
+    </ClCompile>
+    <ClCompile Include="JPackage.cpp">
+      <Filter>Source Files\AST\JPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="JProject.cpp">
+      <Filter>Source Files\AST\JProject</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkingWithFiles.cpp">
+      <Filter>Source Files\Working with files</Filter>
+    </ClCompile>
+    <ClCompile Include="Defn.cpp">
+      <Filter>Source Files\SymbolTable\Definetions\Defn</Filter>
+    </ClCompile>
+    <ClCompile Include="MethodNameDefn.cpp">
+      <Filter>Source Files\SymbolTable\Definetions\MethodNameDefn</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassNameDefn.cpp">
+      <Filter>Source Files\SymbolTable\Definetions\ClassNameDefn</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfaceNameDefn.cpp">
+      <Filter>Source Files\SymbolTable\Definetions\InterfaceNameDefn</Filter>
+    </ClCompile>
+    <ClCompile Include="VariableNameDefn.cpp">
+      <Filter>Source Files\SymbolTable\Definetions\VariableNameDefn</Filter>
+    </ClCompile>
+    <ClCompile Include="Type.cpp">
+      <Filter>Source Files\Types\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayType.cpp">
+      <Filter>Source Files\Types\ArrayType</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveType.cpp">
+      <Filter>Source Files\Types\PrimitiveType</Filter>
+    </ClCompile>
+    <ClCompile Include="ReferenceType.cpp">
+      <Filter>Source Files\Types\ReferenceType</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessProperty.cpp">
+      <Filter>Source Files\AST\AccessProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="Context.cpp">
+      <Filter>Source Files\SymbolTable\Contexts\Context</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassContext.cpp">
+      <Filter>Source Files\SymbolTable\Contexts\ClassContext</Filter>
+    </ClCompile>
+    <ClCompile Include="packageContext.cpp">
+      <Filter>Source Files\SymbolTable\Contexts\packageContext</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectContext.cpp">
+      <Filter>Source Files\SymbolTable\Contexts\ProjectContext</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfaceContext.cpp">
+      <Filter>Source Files\SymbolTable\Contexts\InterfaceContext</Filter>
+    </ClCompile>
+    <ClCompile Include="CompilationContext.cpp">
+      <Filter>Source Files\SymbolTable\Contexts\CompilationContext</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalContext.cpp">
+      <Filter>Source Files\SymbolTable\Contexts\LocalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="MethodContext.cpp">
+      <Filter>Source Files\SymbolTable\Contexts\MethodContext</Filter>
+    </ClCompile>
+    <ClCompile Include="JConstructorDeclaration.cpp">
+      <Filter>Source Files\AST\JConstructorDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="JInitializerDeclaration.cpp">
+      <Filter>Source Files\AST\JInitializerDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="JEmptyStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JEmptyStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JCatch.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JCatch</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteral.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteral</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralChar.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralChar</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralDouble.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralDouble</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralFalse.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralFalse</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralFloat.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralFloat</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralInt.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralInt</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralLong.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralLong</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralNull.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralNull</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralString.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralString</Filter>
+    </ClCompile>
+    <ClCompile Include="JLiteralTrue.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JLiterals\JLiteralTrue</Filter>
+    </ClCompile>
+    <ClCompile Include="JBinaryExpression.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBinaryExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="JDivOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JDivOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JModOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JModOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JMulOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JMulOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JPlusOP.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JPlusOP</Filter>
+    </ClCompile>
+    <ClCompile Include="JSubOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JSubOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JBoolBinaryExpression.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JBoolBinaryExrepssion</Filter>
+    </ClCompile>
+    <ClCompile Include="JEqualOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JEqualOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JLogicalAndOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JLogicalAndOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JLogicalOrOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JLogicalOrOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JNotEqualOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JNotEqualOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JAssignment.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JAssignment</Filter>
+    </ClCompile>
+    <ClCompile Include="JAssignOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JAssignOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JDivAssignOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JDivAssignOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JMulAssignOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JMulAssignOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JPlusAssignOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JPlusAssignOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JSubAssignOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JAssignmentExpressions\JSubAssignOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JComparison.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JComparison</Filter>
+    </ClCompile>
+    <ClCompile Include="JGreaterOrEqualOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JGreaterOrEqualOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JGreaterThanOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JGreaterThanOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JLessOrEqualOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JLessOrEqualOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JLessThanOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JBoolBinaryExrepssions\JComparisonExpressions\JLessThanOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JThis.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JThis</Filter>
+    </ClCompile>
+    <ClCompile Include="JSuper.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JSuper</Filter>
+    </ClCompile>
+    <ClCompile Include="JConditionalExpression.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JConditionalExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="JLogicalNotOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JLogicalNotOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JNegateOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JNegateOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JPostDecrementOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPostDecrementOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JPostIncrementOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPostIncrementOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JPreDecrementOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPreDecrementOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JPreIncrementOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPreIncrementOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JPositiveOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JPositiveOp</Filter>
+    </ClCompile>
+    <ClCompile Include="JUnaryExpression.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\JUnaryExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="typeName.cpp">
+      <Filter>Source Files\Types\TypeName</Filter>
+    </ClCompile>
+    <ClCompile Include="JSuperConstruction.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JConstructorExpressions\JSuperConstruction</Filter>
+    </ClCompile>
+    <ClCompile Include="JThisConstruction.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JConstructorExpressions\JThisConstruction</Filter>
+    </ClCompile>
+    <ClCompile Include="PackageNameDefn.cpp">
+      <Filter>Source Files\SymbolTable\Definetions\PackageNameDefn</Filter>
+    </ClCompile>
+    <ClCompile Include="JArithmaticBinaryExpression.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\BinaryExpressions\JArithmaticBinaryExpressions\JArithmaticBinaryExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="IncrementExpression.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\UnaryExpressions\IncrementExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="JArrayExpression.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JArray\JArrayExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="JVariable.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\JVariable</Filter>
+    </ClCompile>
+    <ClCompile Include="JFieldSelection.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\JFieldSelection</Filter>
+    </ClCompile>
+    <ClCompile Include="MethodSelection.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\MethodSelection</Filter>
+    </ClCompile>
+    <ClCompile Include="CastExpression.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\CastExpression</Filter>
+    </ClCompile>
+    <ClCompile Include="JClass.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\JClass</Filter>
+    </ClCompile>
+    <ClCompile Include="JForeachStatement.cpp">
+      <Filter>Source Files\AST\JStatementsTypes\JForeachStatement</Filter>
+    </ClCompile>
+    <ClCompile Include="JPackageSelector.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\Selector\JPackageSelector</Filter>
+    </ClCompile>
+    <ClCompile Include="Printer.cpp">
+      <Filter>Source Files\AST\Printer</Filter>
+    </ClCompile>
+    <ClCompile Include="yacc.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="JNewOp.cpp">
+      <Filter>Source Files\AST\JExpressionsTypes\JNewOp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scanning.l">
+      <Filter>Source Files\Scanner</Filter>
+    </None>
+    <None Include="yacc_final.y">
+      <Filter>Source Files\parser</Filter>
+    </None>
+    <None Include="yacc.output">
+      <Filter>Source Files\parser</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="assembly.asm">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="grammarListening.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="tokenListening.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\..\..\JavaWorkSpace\FirstJavaProject\ali.second\ali.three\Coding3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\..\..\JavaWorkSpace\FirstJavaProject\ali.first\Coding.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\..\..\JavaWorkSpace\FirstJavaProject\ali.first\Coding2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\..\..\..\Packages\ali.second\ali.three\Coding3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

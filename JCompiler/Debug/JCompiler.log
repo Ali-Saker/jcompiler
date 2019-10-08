@@ -1,0 +1,9 @@
+﻿Build started 6/6/2017 3:27:15 PM.
+     1>Project "F:\Compiler-6-1-2017\Compiler\JCompiler\JCompiler\JCompiler.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         JCompiler.vcxproj -> F:\Compiler-6-1-2017\Compiler\JCompiler\Debug\JCompiler.exe
+     1>Done Building Project "F:\Compiler-6-1-2017\Compiler\JCompiler\JCompiler\JCompiler.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.16

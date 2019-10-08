@@ -1,0 +1,9 @@
+﻿Build started 1/2/2017 12:32:35 AM.
+     1>Project "D:\WebApplications\Compiler\JCompiler\JCompiler\JCompiler.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         JCompiler.vcxproj -> D:\WebApplications\Compiler\JCompiler\Release\JCompiler.exe
+     1>Done Building Project "D:\WebApplications\Compiler\JCompiler\JCompiler\JCompiler.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.29
